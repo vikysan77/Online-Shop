@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Бордер-колли",
+      "price": 5000,
+      "image": "assets/images/dogs1.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 100,
+        "weight": 11,
+        "age": 3
+      }
+    },
+    {
+      "id": 2,
+      "title": "Ретривер",
+      "price": 1500,
+      "image": "assets/images/dogs2.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 40,
+        "weight": 3,
+        "age": 3
+      }
+    },
+    {
+      "id": 3,
+      "title": "Йоркипу",
+      "price": 1000,
+      "image": "assets/images/dogs3.jpg",
+      "text": "Маленькая веселая",
+      "grade": 4,
+      "description": {
+        "size": 50,
+        "weight": 5,
+        "age": 2
+      }
+    },
+    {
+      "id": 4,
+      "title": "Доберман",
+      "price": 2000,
+      "image": "assets/images/dogs4.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 110,
+        "weight": 10,
+        "age": 5
+      }
+    },
+    {
+      "id": 5,
+      "title": "Тибетский мастиф",
+      "price": 5000,
+      "image": "assets/images/dogs5.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 200,
+        "weight": 20,
+        "age": 5
+      }
+    },
+    {
+      "id": 6,
+      "title": "Китайская хохлатая собака",
+      "price": 2000,
+      "image": "assets/images/dogs6.jpg",
+      "text": "Маленькая веселая",
+      "grade": 5,
+      "description": {
+        "size": 70,
+        "weight": 7,
+        "age": 5
+      }
+    }
+  ]
+}

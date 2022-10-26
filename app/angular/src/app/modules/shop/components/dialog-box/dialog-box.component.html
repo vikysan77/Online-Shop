@@ -1,0 +1,37 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title" placeholder="" value="title">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price" placeholder="" value="price">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Text</mat-label>
+    <input matInput formControlName="text" placeholder="" value="text">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Image</mat-label>
+    <input matInput formControlName="image" placeholder="" value="image">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Grade</mat-label>
+    <input matInput formControlName="grade" placeholder="" value="grade">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Size</mat-label>
+    <input matInput formControlName="size" placeholder="" value="size">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Weight</mat-label>
+    <input matInput formControlName="weight" placeholder="" value="weight">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput formControlName="age" placeholder="" value="age">
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Добавить товар</button>
+  <button mat-raised-button color="primary" (click)="onNoClick()">Отмена</button>
+</form>
+
