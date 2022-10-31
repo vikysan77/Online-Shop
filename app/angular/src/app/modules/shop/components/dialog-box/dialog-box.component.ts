@@ -10,27 +10,33 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class DialogBoxComponent implements OnInit {
 
   myForm: FormGroup = new FormGroup({
-    title: new FormControl(''),
-    price: new FormControl(''),
-    text: new FormControl(''),
-    image: new FormControl(''),
-    grade: new FormControl(''),
-    size: new FormControl(''),
-    weight: new FormControl(''),
-    age: new FormControl(''),
+    id: new FormControl(this.data?.id ?? null),
+    title: new FormControl(this.data?.title ?? ''),
+    price: new FormControl(this.data?.price ?? ''),
+    text: new FormControl(this.data?.text ?? ''),
+    image: new FormControl(this.data?.image ?? ''),
+    grade: new FormControl(this.data?.grade ?? ''),
+    size: new FormControl(this.data?.size ?? ''),
+    weight: new FormControl(this.data?.weight ?? ''),
+    age: new FormControl(this.data?.age ?? ''),
   })
+
+  isNew: boolean = true;
 
   constructor(
     public dialogRef: MatDialogRef<DialogBoxComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-  ) {}
+  ) {
+    if(this.data) this.isNew = false
+  }
 
   onNoClick(): void {
-    this.dialogRef.close();
+    this.dialogRef.close(null);
   }
 
   onSubmit(){
     this.data = {
+      id: this.myForm.value.id,
       title: this.myForm.value.title,
       price: this.myForm.value.price,
       text: this.myForm.value.texte,

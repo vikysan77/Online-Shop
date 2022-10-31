@@ -31,7 +31,8 @@
     <mat-label>Age</mat-label>
     <input matInput formControlName="age" placeholder="" value="age">
   </mat-form-field>
-  <button mat-raised-button color="primary" type="submit">Добавить товар</button>
-  <button mat-raised-button color="primary" (click)="onNoClick()">Отмена</button>
+  <button mat-raised-button color="primary" type="submit">
+    {{ isNew ? 'Добавить товар' : 'Обновить'}}</button>
+  <button mat-raised-button color="primary" (click)="onNoClick()" type="button">Отмена</button>
 </form>
 

@@ -23,7 +23,7 @@
       <button mat-raised-button color="primary" routerLink="/basket">В корзину</button>
       <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">Ред.</button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>Редактировать</button>
+        <button mat-menu-item (click)="openDialog(product)">Редактировать</button>
         <button mat-menu-item (click)="deleteItem(product.id)">Удалить</button>
       </mat-menu>
     </mat-card-actions>
