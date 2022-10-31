@@ -6,6 +6,7 @@ export interface IProducts {
   text: string,
   grade: number,
   description: IDescription,
+  amount: number,
   
 }
 

@@ -20,7 +20,7 @@
     </mat-card-title>
     <mat-card-actions>
       <button mat-raised-button color="primary" [routerLink]="['/detail',product.id]">Подробнее</button>
-      <button mat-raised-button color="primary" routerLink="/basket">В корзину</button>
+      <button mat-raised-button color="primary" (click)="addToBasket(product)" type="button">В корзину</button>
       <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">Ред.</button>
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="openDialog(product)">Редактировать</button>

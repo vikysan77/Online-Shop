@@ -89,21 +89,36 @@
         "weight": "",
         "age": ""
       }
-    },
-    {
-      "id": 8,
-      "title": "sssaassssss",
-      "price": "",
-      "image": "",
-      "grade": "",
-      "description": {
-        "size": "",
-        "weight": "",
-        "age": ""
-      }
     }
   ],
   "basket": [
-    {}
+    {
+      "id": 2,
+      "title": "Ретривер",
+      "price": 1500,
+      "image": "assets/images/dogs2.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 40,
+        "weight": 3,
+        "age": 3
+      },
+      "amount": 1
+    },
+    {
+      "id": 1,
+      "title": "Бордер-колли",
+      "price": 5000,
+      "image": "assets/images/dogs1.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 100,
+        "weight": 11,
+        "age": 3
+      },
+      "amount": 1
+    }
   ]
 }
