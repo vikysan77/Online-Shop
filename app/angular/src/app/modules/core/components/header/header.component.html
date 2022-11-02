@@ -9,7 +9,7 @@
       <button class="toolbar button" mat-raised-button color="accent" routerLink="main">Главная</button>
       <button class="toolbar button" mat-raised-button color="accent" routerLink="products">Товары</button>
       <button class="toolbar button" mat-raised-button color="accent" routerLink="basket">
-        <mat-icon matBadge="15" class="example-icon" >shopping_cart_checkout</mat-icon>
+        <mat-icon matBadge="{{basketLength}}" class="example-icon" >shopping_cart_checkout</mat-icon>
       </button>
     </div>
   </mat-toolbar-row>

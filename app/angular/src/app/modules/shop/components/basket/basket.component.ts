@@ -18,7 +18,6 @@ export class BasketComponent implements OnInit {
   ngOnInit(): void {
     this.basketSubscription = this.ProductService.getProductsFromBasket().subscribe((data)=>{
       this.basket = data;
-      console.log(this.basket)
     })
   }
 

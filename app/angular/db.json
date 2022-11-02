@@ -27,19 +27,6 @@
       }
     },
     {
-      "id": 3,
-      "title": "Йоркипу",
-      "price": 1000,
-      "image": "assets/images/dogs3.jpg",
-      "text": "Маленькая веселая",
-      "grade": 4,
-      "description": {
-        "size": 50,
-        "weight": 5,
-        "age": 2
-      }
-    },
-    {
       "id": 4,
       "title": "Доберман",
       "price": 2000,
@@ -89,9 +76,35 @@
         "weight": "",
         "age": ""
       }
+    },
+    {
+      "id": 8,
+      "title": "334333e3e",
+      "price": "",
+      "image": "",
+      "grade": "",
+      "description": {
+        "size": "",
+        "weight": "",
+        "age": ""
+      }
     }
   ],
   "basket": [
+    {
+      "id": 1,
+      "title": "Бордер-колли",
+      "price": 5000,
+      "image": "assets/images/dogs1.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 100,
+        "weight": 11,
+        "age": 3
+      },
+      "amount": 2
+    },
     {
       "id": 2,
       "title": "Ретривер",
@@ -104,19 +117,19 @@
         "weight": 3,
         "age": 3
       },
-      "amount": 1
+      "amount": 3
     },
     {
-      "id": 1,
-      "title": "Бордер-колли",
+      "id": 5,
+      "title": "Тибетский мастиф",
       "price": 5000,
-      "image": "assets/images/dogs1.jpg",
+      "image": "assets/images/dogs5.jpg",
       "text": "Большая веселая",
       "grade": 5,
       "description": {
-        "size": 100,
-        "weight": 11,
-        "age": 3
+        "size": 200,
+        "weight": 20,
+        "age": 5
       },
       "amount": 1
     }
