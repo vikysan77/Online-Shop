@@ -14,10 +14,13 @@ export class BasketComponent implements OnInit {
 
   basket!: IProducts[];
   basketSubscription!: Subscription;
+  basketPrice: number = 0;
+  basketAmount: number = 0;
 
   ngOnInit(): void {
     this.basketSubscription = this.ProductService.getProductsFromBasket().subscribe((data)=>{
-      this.basket = data;
+      this.sumPriceToBasket(data);
+      this.sumAmountToBasket(data);
     })
   }
 
@@ -48,6 +51,18 @@ export class BasketComponent implements OnInit {
       let index = this.basket.findIndex((data) => data.id === item.id);
       this.basket.splice(index, 1);
     })
+  }
+
+  sumPriceToBasket(data: IProducts[]){
+      this.basket = data;
+      let arrProductsPrice = this.basket.map(item => item.amount*item.price);
+      this.basketPrice = arrProductsPrice.reduce((a, b) => a + b);
+  }
+
+  sumAmountToBasket(data: IProducts[]){
+    this.basket = data;
+      let arrProductsAmount = this.basket.map(item => item.amount);
+      this.basketAmount = arrProductsAmount.reduce((a, b) => a + b);
   }
 
 }

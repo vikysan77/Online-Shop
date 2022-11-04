@@ -14,13 +14,19 @@ export class HeaderComponent implements OnInit {
 
   basket!: IProducts[];
   basketSubscription!: Subscription;
-  basketLength!: number;
+  basketLength: number = 0;
 
   ngOnInit(): void {
     this.basketSubscription = this.ProductService.getProductsFromBasket().subscribe((data)=>{
-      this.basket = data;
-      let arrProducts = this.basket.map(item => item.amount);
-      this.basketLength = arrProducts.reduce((a, b) => a + b);
+      this.sumProducts(data);
     })
+    
+  }
+
+  sumProducts(data: IProducts[]){
+    this.basket = data;
+    let arrProducts = this.basket.map(item => item.amount);
+    this.basketLength = arrProducts.reduce((a, b) => a + b);
+   
   }
 }

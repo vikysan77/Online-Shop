@@ -76,35 +76,9 @@
         "weight": "",
         "age": ""
       }
-    },
-    {
-      "id": 8,
-      "title": "334333e3e",
-      "price": "",
-      "image": "",
-      "grade": "",
-      "description": {
-        "size": "",
-        "weight": "",
-        "age": ""
-      }
     }
   ],
   "basket": [
-    {
-      "id": 1,
-      "title": "Бордер-колли",
-      "price": 5000,
-      "image": "assets/images/dogs1.jpg",
-      "text": "Большая веселая",
-      "grade": 5,
-      "description": {
-        "size": 100,
-        "weight": 11,
-        "age": 3
-      },
-      "amount": 2
-    },
     {
       "id": 2,
       "title": "Ретривер",
@@ -117,18 +91,18 @@
         "weight": 3,
         "age": 3
       },
-      "amount": 3
+      "amount": 4
     },
     {
-      "id": 5,
-      "title": "Тибетский мастиф",
-      "price": 5000,
-      "image": "assets/images/dogs5.jpg",
-      "text": "Большая веселая",
+      "id": 6,
+      "title": "Китайская хохлатая собака",
+      "price": 2000,
+      "image": "assets/images/dogs6.jpg",
+      "text": "Маленькая веселая",
       "grade": 5,
       "description": {
-        "size": 200,
-        "weight": 20,
+        "size": 70,
+        "weight": 7,
         "age": 5
       },
       "amount": 1
