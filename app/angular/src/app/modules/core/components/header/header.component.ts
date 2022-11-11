@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { IProducts } from 'src/app/modules/shop/model/products';
 import { ProductsService } from 'src/app/modules/shop/services/products.service';
@@ -6,7 +6,8 @@ import { ProductsService } from 'src/app/modules/shop/services/products.service'
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent implements OnInit {
 

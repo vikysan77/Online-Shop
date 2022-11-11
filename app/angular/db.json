@@ -91,7 +91,7 @@
         "weight": 3,
         "age": 3
       },
-      "amount": 4
+      "amount": 6
     },
     {
       "id": 6,
@@ -104,6 +104,34 @@
         "size": 70,
         "weight": 7,
         "age": 5
+      },
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "title": "Доберман",
+      "price": 2000,
+      "image": "assets/images/dogs4.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 110,
+        "weight": 10,
+        "age": 5
+      },
+      "amount": 1
+    },
+    {
+      "id": 1,
+      "title": "Бордер-колли",
+      "price": 5000,
+      "image": "assets/images/dogs1.jpg",
+      "text": "Большая веселая",
+      "grade": 5,
+      "description": {
+        "size": 100,
+        "weight": 11,
+        "age": 3
       },
       "amount": 1
     }

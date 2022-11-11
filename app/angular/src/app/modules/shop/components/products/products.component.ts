@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
 import { IProducts } from '../../model/products';
@@ -8,7 +8,8 @@ import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+  styleUrls: ['./products.component.scss'],
+  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductsComponent implements OnInit {
   products!: IProducts[];
@@ -21,14 +22,14 @@ export class ProductsComponent implements OnInit {
   constructor(private ProductsService: ProductsService,public dialog: MatDialog) { }
 
   ngOnInit(): void {
-
     this.canEdit = true;
     this.productsSubscription = this.ProductsService.getProducts().subscribe((data) => {
-      this.products = data;
+      this.products = data; 
+    });
     this.basketSubscription =  this.ProductsService.getProductsFromBasket().subscribe((data) => {
       this.basket = data;
-    })
-  });
+    });
+ 
   }
 
   addToBasket(product: IProducts){
